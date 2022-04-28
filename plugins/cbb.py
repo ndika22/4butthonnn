@@ -13,10 +13,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text=f"<b>Tentang Bot ini:\n\n@{client.username} adalah Bot Telegram untuk menyimpan Postingan atau File yang dapat Diakses melalui Link Khusus.\n\n • Creator: @{OWNER}\n • Source Code: <a href='https://github.com/mrismanaziz/File-Sharing-Man'>File-Sharing-Man</a>\n • Owner Repo: @mrismanaziz\n\n👨‍💻 Develoved by @Lunatic0de</b>\n",
+            text=f"<b>Tentang Bot ini:\n\n@{client.username} adalah Bot Telegram untuk menyimpan Postingan atau File yang dapat Diakses melalui Link Khusus.\n\n • Creator: @{OWNER}\n • Jasa Bot Murah: <a href='https://t.me/PoocongOnlen/182'>Disini</a>\n • Owner Repo: @pocongonlen\n\n👨‍💻 Maintened bot by @Pocongproject</b>\n",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴜᴛᴜᴘ •", callback_data="close")]]
+                [[InlineKeyboardButton("Tutup", callback_data="close")]]
             ),
         )
     elif data == "close":
